@@ -1,0 +1,19 @@
+{
+	"name": "inputDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedServiceSGRE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "comments.txt",
+				"folderPath": "input",
+				"container": "sgre-container"
+			}
+		}
+	}
+}
