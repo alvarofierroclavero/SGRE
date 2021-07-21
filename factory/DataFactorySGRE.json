@@ -1,0 +1,9 @@
+{
+	"name": "DataFactorySGRE",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2285d6a6-f29f-494a-b49f-6cad2a4aca37",
+		"tenantId": "fb87dcb6-a1df-4160-8747-6bd746ed623d"
+	}
+}
