@@ -4,7 +4,7 @@
 		"description": "First pipeline",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopyDataSGRE",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
