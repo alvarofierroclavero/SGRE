@@ -47,6 +47,58 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "CopyDataSGRE2",
+				"description": "Copy back to the source folder",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopyDataSGRE",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "00:10:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "outputData",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SGRE2",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []

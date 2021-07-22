@@ -1,0 +1,20 @@
+{
+	"name": "SGRE2",
+	"properties": {
+		"description": "New procedure",
+		"linkedServiceName": {
+			"referenceName": "linkedServiceSGRE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "finalOutput.txt",
+				"folderPath": "input",
+				"container": "sgre-container"
+			}
+		}
+	}
+}
