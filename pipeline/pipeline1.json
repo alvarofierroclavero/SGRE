@@ -48,12 +48,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"SGRE": {
-				"type": "string",
-				"defaultValue": "1"
-			}
-		},
 		"annotations": []
 	}
 }
