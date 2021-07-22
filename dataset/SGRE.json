@@ -1,5 +1,5 @@
 {
-	"name": "inputDataSet",
+	"name": "SGRE",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "linkedServiceSGRE",
@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "input",
+				"fileName": "output.txt",
+				"folderPath": "output",
 				"container": "sgre-container"
 			}
 		}
